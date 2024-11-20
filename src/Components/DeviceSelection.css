@@ -1,0 +1,248 @@
+/* General Layout */
+.apply-page {
+    font-family: 'Cabinet Grotesk', 'Roboto', 'Fractul', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    padding: 20px 20px 20px 10px;
+    max-width: 1156px;
+    margin: 0 auto;
+    /* background: #FFFFFF; */
+    height: 80px;
+}
+
+.logo {
+    width: 150px; 
+    max-height: 80px; 
+    height: auto; 
+    display: flex;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    justify-content: space-between; /* Ensures progress and device cards are side by side */
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 0 20px; /* Add padding to prevent content touching screen edges */
+}
+
+/* Progress Steps Container (Left Side) */
+.progress-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 20px;
+    position: relative;
+    top: 20px;
+    margin-left: 0px;
+}
+
+/* Progress Card and Icons */
+/* Progress Steps Container */
+.progress-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 20px;
+    position: relative;
+    top: 20px;
+    margin-left: 0px;
+}
+
+/* Progress Card Styles */
+.progress-card {
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    margin-left: -20px;
+}
+
+/* Step Links */
+.step-links {
+    margin-left: 45px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Individual Step Item */
+.step-links li {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* Icon Styles */
+.step-links li .icon {
+    width: 30px;
+    height: 30px;
+    /* margin-top: px; */
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+/* Completed Step Styles */
+.step-links li.completed .icon {
+    border: 2px solid green;
+    background-color: #d4f8d4; /* Light green for completed steps */
+}
+
+.step-links li.completed a {
+    color: green; /* Green text for completed step title */
+    font-weight: bold;
+}
+
+.step-links li.completed p {
+    color: green; /* Green text for completed description */
+    font-style: italic;
+}
+
+/* In-Progress Step Styles */
+.step-links li.in-progress .icon {
+    border: 2px solid blue;
+    background-color: #e0f0ff; /* Light blue for in-progress steps */
+}
+
+.step-links li.in-progress a {
+    color: rgb(0, 0, 0); /* Blue text for in-progress step title */
+    font-weight: bold;
+}
+
+.step-links li.in-progress p {
+    color: blue; /* Blue text for in-progress description */
+    font-style: italic;
+}
+
+/* Vertical Line Between Steps */
+.step-links li .vertical-line {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    bottom: 0;
+    width: 2px;
+    height: 60px;
+    background-color: #b4b4b4;
+    z-index: 1;
+}
+
+/* Step Text Styling */
+.step-links li a {
+    font-family: Cabinet Grotesk;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+    text-decoration: none;
+    color: #252121;
+    margin-left: 10px;
+    
+}
+
+.step-links li p {
+    font-family: Cabinet Grotesk;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Device Cards Container (Right Side) */
+.cards-container {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding-right: 20px;
+    position: relative;
+    top: 20px;
+}
+
+/* Device Cards */
+.device-card {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.device-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Image Card inside the Main Card */
+.image-card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+}
+
+.image-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 100px;
+}
+
+/* Device Details Styling */
+.device-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.device-details h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.device-details p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    width: 100px;
+    max-height: 80px;
+}
