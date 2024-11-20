@@ -4,6 +4,9 @@ import LandingPage from './Components/LandingPage';
 import DeviceSelection from './Components/DeviceSelection';
 import DeviceCard from './Components/DeviceCard';
 import UserBvn from './Components/UserBvn';
+import UserDetails from './Components/UserDetails';
+import LoanSummary from './Components/LoanSummary';
+import PickupOption from './Components/PickupOption'
 
 const App = () => {
     return (
@@ -14,6 +17,10 @@ const App = () => {
             <Route path="/DeviceSelection" element={<DeviceSelection />} />
             <Route path="/device/:deviceName" element={<DeviceCard />} />
             <Route path="/UserBvn" element={<UserBvn />} />
+            <Route path="/UserDetails" element={<UserDetails />} />
+            <Route path="/LoanSummary" element={<LoanSummary />} />
+            <Route path="/PickupOption" element={<PickupOption />} />
+
         </Routes>
     );
 };

@@ -57,11 +57,12 @@
 }
 
 
-  .navbar .btn {
+  .navbar .btn12 {
     background:#006633;
-    ;
     padding: 10px 30px;
     color: white;
+    text-decoration: none;
+    border-radius: 5px;
   }
   
   /* Hero Section */
@@ -98,7 +99,7 @@
     margin-bottom: 30px;
   }
 
-  .hero-section .btn-primary {
+  .hero-section .btn13 {
     background: #006633;
     color: #fff;
     font-size: 1rem;

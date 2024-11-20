@@ -1,0 +1,80 @@
+/* Ensures content is centered */
+.user-details-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container for the progress and form side-by-side */
+.side-by-side-container {
+    display: flex;
+    justify-content:left;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;  
+}
+
+/* Progress Container Styling */
+.progress-container1 {
+    flex: 1;
+    max-width: 300px;  /* Limit the width of progress bar */
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.progress-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Form Styling */
+.custom-card {
+    max-width: 500px;
+    flex: 2;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: 150px;
+    padding: 20px;
+}
+
+.user-details-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

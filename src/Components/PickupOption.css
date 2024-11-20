@@ -1,0 +1,165 @@
+/* Ensures content is centered */
+.Pickup-details-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container for Progress Steps and Pickup Form */
+.side-by-side-container1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    gap: 30px; /* Adds space between progress container and form card */
+}
+
+/* Progress Container Styling */
+.progress-container2 {
+    flex: 1;
+    max-width: 300px;  
+    margin-top: 20px;
+    margin-left: -120px;
+}
+
+/* Progress Card Styling */
+.progress-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Form Card Styling */
+.card.custom-shadow {
+    flex: 2;  /* Allow this to take up more space */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+/* Card Title and Text */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Radio Button Styling */
+.custom-radio-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.custom-radio-card:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+/* Dropdown and Input Styling */
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+}
+
+.form-control:focus {
+    border-color: #037A4E;
+    ;
+    outline: none;
+}
+
+/* Submit Button Styling */
+.btn-primary {
+    background-color: #037A4E;
+    ;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #00b33c;
+}
+
+/* Dimmed Background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* This creates the dimmed background */
+    z-index: 1000;
+}
+
+/* Popup Card Styling */
+.otp-verification-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1001; /* Ensure the modal is on top of the dimmed background */
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.otp-verification-card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.otp-verification-card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.otp-verification-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.otp-verification-card button {
+    background-color: #037A4E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.otp-verification-card button:hover {
+    background-color: #08c46c;
+}

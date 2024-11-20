@@ -20,7 +20,7 @@ const LandingPage = () => {
                 </a>
                 <a
                 href="/DeviceSelection"
-                className="btn btn-primary"
+                className="btn12"
                 onClick={(e) => {
                     e.preventDefault(); // Prevent full reload
                     navigate('/DeviceSelection');
@@ -49,7 +49,7 @@ const LandingPage = () => {
                     than 50% of your allowee monthly!
                 </h1>
                 <p>Flex with Zero Upfront. Own now, Pay later</p>
-                <a href="/DeviceSelection.jsx" className="btn btn-primary btn-lg" onClick={(e) => {
+                <a href="/DeviceSelection.jsx" className="btn13 btn-lg" onClick={(e) => {
                     e.preventDefault(); // Prevent full reload
                     navigate('/DeviceSelection');
                 }}>

@@ -39,7 +39,7 @@
 .step-links li .icon {
     width: 30px;
     height: 30px;
-    /* margin-top: px; */
+    margin-top: 1px;
     margin-right: 10px;
     border-radius: 50%;
     background-color: #f0f0f0;
@@ -60,9 +60,10 @@
     font-weight: bold;
 }
 
-.step-links li.completed p {
+.completed-status {
     color: green; /* Green text for completed description */
     font-style: italic;
+    margin-left: 10px;
 }
 
 /* In-Progress Step Styles */
@@ -76,9 +77,10 @@
     font-weight: bold;
 }
 
-.step-links li.in-progress p {
+.in-progress-status {
     color: blue; /* Blue text for in-progress description */
     font-style: italic;
+    margin-left: 10px;
 }
 
 /* Vertical Line Between Steps */
@@ -88,7 +90,7 @@
     top: 12px;
     bottom: 0;
     width: 2px;
-    height: 60px;
+    height: 72px;
     background-color: #b4b4b4;
     z-index: 1;
 }
@@ -114,9 +116,9 @@
 }
 /* Form Section */
 .form-container {
+    margin-top: 20px;
     width: 100%;
     max-width: 500px;
-    margin: 0 auto;
     padding: 20px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -139,7 +141,8 @@
     border-radius: 5px;
 }
 
-.btn-primary {
+.btn22 {
+    width: 450px;
     background-color: #4CAF50;
     border: none;
     padding: 10px 20px;

@@ -4,7 +4,7 @@ import './DeviceSelection.css';
 
 const DeviceSelection = () => {
     const navigate = useNavigate();
-    const [currentStep, setCurrentStep] = useState(1); // Step 1
+    const [currentStep, ] = useState(1);
 
     const devices = [
         { name: "Samsung A15 (4GB + 128GB/4G)", price: "N240,500", image: "/images/A15.png" },

@@ -16,6 +16,12 @@ const UserBvn = () => {
         { id: 6, label: "Select Pickup Option" },
     ];
 
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate('/UserDetails'); 
+    };
+
     return (
         <div>
             {/* Navbar */}
@@ -51,14 +57,18 @@ const UserBvn = () => {
                                         className="icon"
                                     />
                                     <div className="wrap">
-                                        <a
-                                            href={`#step${step}`}
-                                            onClick={(e) => {
-                                                e.preventDefault();
-                                                navigate(`/Step${step}`);
-                                            }}
-                                        >
-                                            {steps.find(s => s.id === step)?.label}
+                                        <a href="#" onClick={(e) => e.preventDefault()}>
+                                            {step === 1
+                                                ? "Select device"
+                                                : step === 2
+                                                    ? "Tell us about yourself"
+                                                    : step === 3
+                                                        ? "Verification"
+                                                        : step === 4
+                                                            ? "Loan Summary"
+                                                            : step === 5
+                                                                ? "OTP Verification"
+                                                                : "Select Pickup Option"}
                                         </a>
                                         <div className="status">
                                             {currentStep > step && (
@@ -90,7 +100,7 @@ const UserBvn = () => {
                             We need to validate your information. For that, we
                             require some personal data.
                         </p>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div className="form-group">
                                 <label htmlFor="bvn">
                                     Bank Verification Number (BVN)
@@ -100,11 +110,12 @@ const UserBvn = () => {
                                     className="form-control"
                                     id="bvn"
                                     placeholder="Enter your BVN"
+                                    required
                                 />
                             </div>
                             <button
                                 type="submit"
-                                className="btn btn-primary mt-3"
+                                className="btn22"
                             >
                                 Submit
                             </button>
